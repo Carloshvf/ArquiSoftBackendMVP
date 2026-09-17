@@ -19,12 +19,8 @@ class FavoritoCreate(BaseModel):
 
 
 class FavoritoUpdate(BaseModel):
-    nome: Optional[str] = None
-    endereco: Optional[str] = None
-    categoria: Optional[str] = None
-    nota_pessoal: Optional[int] = Field(None, ge=1, le=5)
-    comentario: Optional[str] = None
-    tags: Optional[List[str]] = None
+    nota_pessoal: Optional[int] = Field(None, ge=1, le=5, description="Nova nota pessoal, de 1 a 5")
+    comentario: Optional[str] = Field(None, description="Novo comentário")
 
 class DescobrirQuery(BaseModel):
     lat: float = Field(..., description="Latitude do centro da busca")

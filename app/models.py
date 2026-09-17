@@ -11,10 +11,10 @@ class RestauranteFavorito(db.Model):
     latitude = db.Column(db.Float, nullable=False)
     longitude = db.Column(db.Float, nullable=False)
     categoria = db.Column(db.String(60), nullable=True, index=True)
-    nota_pessoal = db.Column(db.Integer, nullable=True)  # 1 a 5
+    nota_pessoal = db.Column(db.Integer, nullable=True) 
     comentario = db.Column(db.Text, nullable=True)
-    tags = db.Column(db.String(255), nullable=True)  # tags separadas por vírgula
-    osm_id = db.Column(db.String(60), nullable=True)  # id do local no OpenStreetMap
+    tags = db.Column(db.String(255), nullable=True)  
+    osm_id = db.Column(db.String(60), nullable=True)  
     data_criacao = db.Column(db.DateTime, default=datetime.utcnow)
 
     def to_dict(self):

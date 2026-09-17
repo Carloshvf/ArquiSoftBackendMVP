@@ -6,6 +6,12 @@ Este componente é a API secundária da arquitetura, consumida pelo Front-End em
 
 > A documentação completa da API externa utilizada (licença, cadastro, rotas consumidas) está no README do repositório principal (front-end), conforme os requisitos do projeto.
 
+## Observações sobre a API externa
+
+O servidor público da Overpass API (`overpass-api.de`) apresenta instabilidade ocasional, podendo retornar erros temporários (ex.: `406`, `504`, timeout) mesmo com a requisição correta. Isso é uma limitação conhecida do serviço gratuito, não do código da aplicação. Se a rota `GET /api/descobrir` falhar, repetir a requisição normalmente resolve — a API já trata esses erros retornando um `502` com uma mensagem clara em vez de quebrar a aplicação.
+
+Caso a instabilidade persista, um mirror alternativo pode ser usado trocando a constante `OVERPASS_URL` em `app/external_api.py` para `https://overpass.kumi.systems/api/interpreter`.
+
 ## Tecnologias
 
 - Python 3.12
