@@ -36,7 +36,7 @@ A documentação interativa (Swagger UI) fica disponível em `/openapi` após su
 ## Estrutura de pastas
 
 \```
-restaurantes_backend_API/
+ArquiSoftBackendMVP/
 ├── app/
 │ ├── **init**.py # application factory
 │ ├── database.py # configuração do SQLAlchemy
