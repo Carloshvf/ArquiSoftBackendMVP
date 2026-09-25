@@ -38,7 +38,7 @@ A documentação interativa (Swagger UI) fica disponível em `/openapi` após su
 ```
 ArquiSoftBackendMVP/
 ├── app/
-│ ├── **init**.py # application factory
+│ ├── __init__.py # application factory
 │ ├── database.py # configuração do SQLAlchemy
 │ ├── models.py # modelo RestauranteFavorito
 │ ├── schemas.py # schemas Pydantic (validação/Swagger)
