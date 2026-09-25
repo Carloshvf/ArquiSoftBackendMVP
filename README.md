@@ -35,7 +35,7 @@ A documentação interativa (Swagger UI) fica disponível em `/openapi` após su
 
 ## Estrutura de pastas
 
-\```
+```
 ArquiSoftBackendMVP/
 ├── app/
 │ ├── **init**.py # application factory
@@ -49,7 +49,7 @@ ArquiSoftBackendMVP/
 ├── Dockerfile
 ├── .dockerignore
 └── README.md
-\```
+```
 
 ## Como rodar localmente (sem Docker)
 
